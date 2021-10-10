@@ -72,7 +72,7 @@ int main(){
 							printf("\n");
 						}
 						else if(strcmp(arr[i], ".")==0) {
-							printf("%d",pop(&root));
+							printf("%d\n",pop(&root));
 						}
 						else if(strcmp(arr[i], "=")==0) {
 							if(pop(&root)==pop(&root)){
@@ -133,6 +133,10 @@ int main(){
 							push(&root, tmp2);
 							push(&root, tmp);
 							push(&root, tmp3);
+						}
+						else if(strcmp(arr[i], ".exit")==0) {
+							printf("Qutting..\n");
+							exit(0);
 						}
 						else{
 							printf("%s foo ?\n",arr[i]);
