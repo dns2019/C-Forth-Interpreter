@@ -135,7 +135,7 @@ int main(){
 							push(&root, tmp3);
 						}
 						else if(strcmp(arr[i], ".exit")==0) {
-							printf("Qutting..\n");
+							printf("Quitting..\n");
 							exit(0);
 						}
 						else{
